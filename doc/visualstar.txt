@@ -10,6 +10,7 @@ CONTENTS					*visualstar-contents*
 INTRODUCTION			|visualstar-introduction|
 INTERFACE			|visualstar-interface|
   KEY MAPPINGS			  |visualstar-key-mappings|
+  SETTINGS                        |visualstar-settings|
 EXAMPLES			|visualstar-examples|
 CHANGELOG			|visualstar-changelog|
 
@@ -82,6 +83,22 @@ g<kMultiply>	<Plug>(visualstar-g*)
 g<S-LeftMouse>	<Plug>(visualstar-g*)
 g#		<Plug>(visualstar-g#)
 
+SETTINGS    					*visualstar-settings*
+
+					*g:visualstar_folds*
+Open the current fold (using |zv|) after jumping to the next match.
+To enable, use
+>
+    let g:visualstar_folds = 1
+<
+
+
+					*g:visualstar_center_screen*
+Center the screen (using |zz|) after jumping to the next match.
+To enable, use
+>
+    let g:visualstar_center_screen = 1
+<
 
 
 ==============================================================================
