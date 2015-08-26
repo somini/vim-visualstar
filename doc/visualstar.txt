@@ -83,27 +83,14 @@ g<kMultiply>	<Plug>(visualstar-g*)
 g<S-LeftMouse>	<Plug>(visualstar-g*)
 g#		<Plug>(visualstar-g#)
 
-SETTINGS    					*visualstar-settings*
-
-					*g:visualstar_folds*
-Open the current fold (using |zv|) after jumping to the next match.
-To enable, use
->
-    let g:visualstar_folds = 1
-<
+EXTRA COMMANDS                                 *visualstar-settings*
 
 
-					*g:visualstar_center_screen*
-Center the screen (using |zz|) after jumping to the next match.
-To enable, use
->
-    let g:visualstar_center_screen = 1
-<
-
-
-         *g:visualstar_extra_commands* *visualstar-settings-override*
-In case you want to run more complex commands when searching, you can set the
-variable *g:visualstar_extra_commands* to override any other option set above.
+                                           *g:visualstar_extra_commands*
+In case you want to run extra commands when searching, you can set the
+variable *g:visualstar_extra_commands* to a key sequence.
+For example, to center the search in the window and open enough folds, you can
+set the following variable.
 >
     let g:visualstar_extra_commands = 'zzzv'
 <

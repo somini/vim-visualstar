@@ -59,19 +59,9 @@ endfunction
 function! s:extra_commands()
   if exists('g:visualstar_extra_commands')
     return g:visualstar_extra_commands
+  else
+    return ''
   endif
-
-  let l:cmd = ''
-
-  if exists('g:visualstar_center_screen') && g:visualstar_center_screen
-    let l:cmd = l:cmd . 'zz'
-  endif
-
-  if exists('g:visualstar_folds') && g:visualstar_folds
-    let l:cmd = l:cmd . 'zv'
-  endif
-
-  return l:cmd
 endfunction
 
 
