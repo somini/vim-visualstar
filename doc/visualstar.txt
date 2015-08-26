@@ -101,6 +101,13 @@ To enable, use
 <
 
 
+         *g:visualstar_extra_commands* *visualstar-settings-override*
+In case you want to run more complex commands when searching, you can set the
+variable *g:visualstar_extra_commands* to override any other option set above.
+>
+    let g:visualstar_extra_commands = 'zzzv'
+<
+
 ==============================================================================
 EXAMPLES					*visualstar-examples*
 

@@ -57,6 +57,10 @@ function! s:count()
 endfunction
 
 function! s:extra_commands()
+  if exists('g:visualstar_extra_commands')
+    return g:visualstar_extra_commands
+  endif
+
   let l:cmd = ''
 
   if exists('g:visualstar_center_screen') && g:visualstar_center_screen
